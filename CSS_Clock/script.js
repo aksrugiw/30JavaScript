@@ -5,7 +5,7 @@ function setDate() {
 
 	const sec = now.getSeconds();
 	const secDegrees = ( sec / 60 ) * 360;
-	console.log(sec);
+	secHand.style.transform = `rotate(${secDegrees}deg)`;
 }
 
 setInterval(setDate, 1000);
