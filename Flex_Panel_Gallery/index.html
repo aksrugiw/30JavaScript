@@ -118,6 +118,7 @@
     }
 
     function toggleActive(e) {
+      // Safari transitionend event.propertyName === flex
       if (e.propertyName.includes('flex')) {
         this.classList.toggle('open-active');
       }
