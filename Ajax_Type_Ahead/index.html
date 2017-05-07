@@ -22,6 +22,15 @@ const cities = [];
 fetch(endpoint)
   .then(blob => blob.json())
   .then(data => cities.push(...data));
+
+function displayMatches() {
+  console.log(this.value);
+}
+
+const searchInput = document.querySelector('.search');
+const suggestions = document.querySelector('.suggestions');
+
+searchInput.addEventListener('change', displayMatches);
 </script>
   </body>
 </html>
